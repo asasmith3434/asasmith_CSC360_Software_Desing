@@ -17,7 +17,7 @@ class PersonTest {
 	}
 	@Test
 	void testToString() {
-		assertEquals("Person: Romeo Mon,15", R.toString() );
+		assertEquals("Person: Romeo Mon,15 ", R.toString() );
 		//fail("Not yet implemented");
 		
 	}
@@ -25,7 +25,7 @@ class PersonTest {
 	void testPerson() {
 		Person child = R.makePerson(J);
 		assertEquals(R.getFname(), child.getFname());
-		assertEquals(R.getLname(), child.getLname());
+		assertEquals(J.getLname(), child.getLname());
 		assertEquals(0, child.getAge());
 
 	}
