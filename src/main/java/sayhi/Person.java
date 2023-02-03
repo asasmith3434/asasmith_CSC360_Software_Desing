@@ -42,6 +42,11 @@ public class Person {
 		return "Person: " + fname + " " + lname + "," + age + " ";
 	}
 	
+	public Person makePerson(Person that) {
+		Person child= new Person(this.fname,that.lname, 0 );
+		return child;
+	}
+	
 	public static void main(String[] args) {
 		Person r= new Person("Romeo", "Mon", 15);
 		System.out.println("R " +r);
